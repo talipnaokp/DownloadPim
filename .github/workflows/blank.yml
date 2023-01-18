@@ -16,6 +16,8 @@ jobs:
       - name: install requirements
         run: |
           pip install selenium
+      - name: Check out repository code
+        uses: actions/checkout@v2
       - name: process data
         run: |
           python ./japan_selenium.py
