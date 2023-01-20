@@ -1,8 +1,4 @@
 name: test
-'on':
-  schedule:
-    - cron: 0 22 * * *
-  workflow_dispatch:
 jobs:
   test:
     runs-on: windows-latest
